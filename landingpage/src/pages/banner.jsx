@@ -92,6 +92,9 @@ const banner = () => {
               </div>
             </div>
           </div>
+          <div className="button">
+            <a href="www.google.com">Our Department Services</a>
+          </div>{" "}
         </div>
       </section>
     </div>
