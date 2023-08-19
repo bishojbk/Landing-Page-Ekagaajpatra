@@ -1,7 +1,7 @@
 import React from "react";
 
-import Less from "../assets/less.png";
-import Greater from "../assets/greater.png";
+import Less from "../assets/left.png";
+import Greater from "../assets/next.png";
 import Sarkar from "../assets/Sarakarlogo.png";
 
 const banner = () => {
@@ -85,7 +85,7 @@ const banner = () => {
                 <div>
                   <img src={Less} alt="greater" className="less"></img>
                 </div>
-                <img src={Sarkar} alt="sarkar"></img>
+                <img src={Sarkar} alt="sarkar" className="sarkar-logo"></img>
                 <div>
                   <img src={Greater} alt="greater" className="greater"></img>
                 </div>
@@ -94,7 +94,7 @@ const banner = () => {
           </div>
           <div className="button">
             <a href="www.google.com">Our Department Services</a>
-          </div>{" "}
+          </div>
         </div>
       </section>
     </div>

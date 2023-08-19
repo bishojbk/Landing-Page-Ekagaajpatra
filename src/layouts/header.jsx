@@ -14,8 +14,13 @@ const header = () => {
               <input type="text" placeholder="Search Services"></input>
             </div>
             <span>
-              <a href="www.google.com">Login</a> |{" "}
-              <a href="www.google.com"> Register </a>
+              <a href="www.google.com" className="btn-login">
+                Login
+              </a>
+
+              <a href="www.google.com" className="btn-register">
+                Register
+              </a>
             </span>
           </div>
 
