@@ -1,7 +1,7 @@
 import React from "react";
 
-import Less from "../assets/left.png";
-import Greater from "../assets/next.png";
+// import Less from "../assets/left.png";
+// import Greater from "../assets/next.png";
 import Temple from "../assets/temple.avif";
 
 const banner = () => {
