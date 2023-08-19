@@ -2,11 +2,7 @@
   padding: 20px 0px;
 
   &_links {
-    background-color: rgb(252, 252, 252);
-    border-radius: 6px;
-    box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
     ul {
-      padding: 7px 5px 0;
       li {
         list-style: none;
         display: flex;
@@ -18,26 +14,23 @@
           justify-content: space-between;
           border-radius: 8px;
           font-weight: 600;
-          margin-bottom: 7px;
           outline: none;
           cursor: pointer;
           transition: all 0.2s ease-in-out;
-          padding: 10px 10px 10px 20px;
+          padding: 10px 0px 10px 5px;
 
           a {
             text-decoration: none;
             color: black;
+            font-weight: 500;
           }
           img {
             width: 10%;
           }
 
           &:hover {
-            background-color: rgb(235, 232, 232);
-
-            img {
-              transform: scale(1.2);
-            }
+            background-color: rgb(231, 239, 247);
+            padding: 10px 0px 10px 15px;
           }
         }
       }
@@ -51,7 +44,7 @@
     border-radius: 6px;
     display: flex;
     align-items: center;
-    height: 71vh;
+    height: 55vh;
 
     .sarkar-logo {
       width: 50%;
@@ -92,7 +85,7 @@
     align-items: center;
 
     a {
-      margin: 0 auto;
+      margin: 50px auto;
       text-decoration: none;
       padding: 15px 12px;
       background: rgb(28, 37, 46);

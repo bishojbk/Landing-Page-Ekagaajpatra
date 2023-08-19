@@ -10,14 +10,13 @@ const banner = () => {
       <section className="banner">
         <div className="container">
           <div className="row">
-            <div className="col-lg-3">
+            <div className="col-lg-2">
               <div className="banner_links">
                 <nav>
                   <ul>
                     <li>
                       <div className="li-lists">
-                        <a href="www.google.com">OCR</a>
-                        <img src={Greater} alt="greater"></img>
+                        <a href="www.google.com">All Templates</a>
                       </div>
 
                       <div className="li-lists">
@@ -55,7 +54,7 @@ const banner = () => {
                         <img src={Greater} alt="greater"></img>
                       </div>
 
-                      <div className="li-lists">
+                      {/* <div className="li-lists">
                         <a href="www.google.com">OCR</a>
                         <img src={Greater} alt="greater"></img>
                       </div>
@@ -73,14 +72,14 @@ const banner = () => {
                       <div className="li-lists">
                         <a href="www.google.com">OCR</a>
                         <img src={Greater} alt="greater"></img>
-                      </div>
+                      </div> */}
                     </li>
                   </ul>
                 </nav>
               </div>
             </div>
 
-            <div className="col-lg-9">
+            <div className="col-lg-10">
               <div className="banner_sarkar">
                 <div>
                   <img src={Less} alt="greater" className="less"></img>
