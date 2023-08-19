@@ -2,17 +2,20 @@ import React from "react";
 
 import Less from "../assets/left.png";
 import Greater from "../assets/next.png";
-import Sarkar from "../assets/Sarakarlogo.png";
+import Temple from "../assets/temple.avif";
 
 const banner = () => {
   return (
     <div>
       <section className="banner">
         <div className="container">
+          <div className="banner_box">
+            <img src={Temple} alt="temple"></img>
+          </div>
           <div className="row">
             <div className="col-lg-2">
               <div className="banner_links">
-                <nav>
+                {/* <nav>
                   <ul>
                     <li>
                       <div className="li-lists">
@@ -54,11 +57,6 @@ const banner = () => {
                         <img src={Greater} alt="greater"></img>
                       </div>
 
-                      {/* <div className="li-lists">
-                        <a href="www.google.com">OCR</a>
-                        <img src={Greater} alt="greater"></img>
-                      </div>
-
                       <div className="li-lists">
                         <a href="www.google.com">OCR</a>
                         <img src={Greater} alt="greater"></img>
@@ -72,15 +70,20 @@ const banner = () => {
                       <div className="li-lists">
                         <a href="www.google.com">OCR</a>
                         <img src={Greater} alt="greater"></img>
-                      </div> */}
+                      </div>
+
+                      <div className="li-lists">
+                        <a href="www.google.com">OCR</a>
+                        <img src={Greater} alt="greater"></img>
+                      </div>
                     </li>
                   </ul>
-                </nav>
+                </nav> */}
               </div>
             </div>
 
-            <div className="col-lg-10">
-              <div className="banner_sarkar">
+            <div className="col-lg-">
+              {/* <div className="banner_sarkar">
                 <div>
                   <img src={Less} alt="greater" className="less"></img>
                 </div>
@@ -88,11 +91,11 @@ const banner = () => {
                 <div>
                   <img src={Greater} alt="greater" className="greater"></img>
                 </div>
-              </div>
+              </div> */}
             </div>
           </div>
           <div className="button">
-            <a href="www.google.com">Our Department Services</a>
+            <a href="www.google.com">Templates & Tutorials</a>
           </div>
         </div>
       </section>

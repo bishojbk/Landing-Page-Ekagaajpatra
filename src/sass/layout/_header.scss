@@ -1,7 +1,13 @@
 .header {
   .header-upper {
-    background-color: rgb(28, 37, 46);
+    background-color: black;
     color: white;
+
+    h3 {
+      font-size: 20px;
+      border: 1px solid white;
+      padding: 5px 10px;
+    }
 
     .container {
       display: flex;
@@ -12,7 +18,7 @@
       .search-bar {
         background-color: rgb(235, 232, 232);
         padding: 5px 15px;
-        width: 30%;
+        width: 50%;
         border-radius: 12px;
         display: flex;
         align-items: center;
@@ -24,15 +30,20 @@
           outline: none;
           background: transparent;
           border: none !important;
+          width: 100%;
 
           &::placeholder {
             font-size: 14px;
             color: black;
+            opacity: 0.8;
+
+            word-spacing: 5px;
+            letter-spacing: 2px;
           }
         }
 
         img {
-          width: 5%;
+          width: 3%;
         }
       }
 
@@ -45,7 +56,7 @@
         }
 
         .btn-register {
-          margin-left: 6px;
+          margin-left: 10px;
           border: 1px solid rgb(245, 237, 237);
           padding: 5px 15px 7px;
           background: transparent;
@@ -67,7 +78,7 @@
   }
 
   .header-lower {
-    background-color: rgb(99, 184, 109);
+    background-color: rgb(242, 242, 242);
 
     .container {
       padding: 15px 0px 15px;
@@ -75,22 +86,51 @@
       nav {
         display: flex;
         align-items: center;
-        justify-content: space-between;
         flex-wrap: wrap;
 
         ul {
+          display: inline-block;
           li {
             list-style: none;
 
             a {
               text-decoration: none;
-              color: white;
-              margin-right: 20px;
+              color: black;
+              margin-right: 88px;
+              position: relative;
 
-              &:hover {
-                color: gainsboro;
+              &:last-child {
+                margin-right: 0px;
+              }
+
+              &:hover::before {
+                overflow: hidden;
+                content: "";
+                position: absolute;
+                width: 100%;
+                border-bottom: 1.5px solid black;
+                bottom: -3px;
+                animation: left 0.5s ease-in;
+                animation-fill-mode: forwards;
+                visibility: hidden;
               }
             }
+          }
+        }
+        @keyframes left {
+          0% {
+            visibility: visible;
+            left: 0;
+            width: 0%;
+          }
+
+          50% {
+            width: 50%;
+          }
+
+          100% {
+            width: 100%;
+            visibility: visible;
           }
         }
       }

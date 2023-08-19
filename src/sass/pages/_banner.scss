@@ -1,5 +1,24 @@
 .banner {
-  padding: 20px 0px;
+  margin: 20px 0px -20px;
+
+  .container {
+    padding: 0;
+  }
+
+  &_box {
+    border: 1px solid black;
+    width: 100%;
+    background-color: white;
+    height: 50vh;
+    padding: 0;
+    margin: 0;
+
+    img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+  }
 
   &_links {
     ul {
@@ -88,15 +107,10 @@
       margin: 50px auto;
       text-decoration: none;
       padding: 15px 12px;
-      background: rgb(28, 37, 46);
+      background: black;
       color: white;
       border-radius: 10px;
       transition: all 0.3s ease-in-out;
-
-      &:hover {
-        background-color: rgb(245, 237, 237);
-        color: black;
-      }
     }
   }
 }
